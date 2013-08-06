@@ -11,3 +11,13 @@
 *.lai
 *.la
 *.a
+
+# Emacs backup files
+*~
+
+# CMake files
+CMakeCache.txt
+*.cmake
+build/Makefile
+build/CMakeFiles
+build/*/
