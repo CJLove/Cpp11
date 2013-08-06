@@ -5,9 +5,13 @@ Cpp11 - git@github.com:CJLove/Cpp11.git
   executables
 
   $ cd build
-  $ ./configure_clang	- clang 3.3
-  $ ./configure_clang64	- 64-bit w/clang 3.3
-  $ ./configure_gcc	- g++ 4.8.1
-  $ ./configure_gcc64	- 64-bit w/g++ 4.8.1
+  
+	configure_clang		- clang 3.3
+
+	configure_clang64	- 64-bit w/clang 3.3
+
+	configure_gcc		- g++ 4.8.1
+
+	configure_gcc64		- 64-bit w/g++ 4.8.1
 
 
