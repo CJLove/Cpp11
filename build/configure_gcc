@@ -3,7 +3,12 @@ if [ -e CMakeCache.txt ] ; then
     rm CMakeCache.txt
 fi
 
-export CXX="/usr/local/gcc481/bin/g++"
-export CC="/usr/local/gcc481/bin/gcc"
+if [ -x /usr/local/gcc481/bin/g++ ] ; then
+    export CXX="/usr/local/gcc481/bin/g++"
+    export CC="/usr/local/gcc481/bin/gcc"
+else
+    export CXX="g++"
+    export CC="gcc"
+fi
 
 cmake .. -DCMAKE_BUILD_TYPE=Debug $1
