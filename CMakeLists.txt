@@ -13,3 +13,4 @@ endif()
 
 add_subdirectory(Auto)
 add_subdirectory(SmartPtrs)
+add_subdirectory(Strings)
