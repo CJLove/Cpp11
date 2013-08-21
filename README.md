@@ -14,4 +14,5 @@ Cpp11 - git@github.com:CJLove/Cpp11.git
 
 	configure_gcc64		- 64-bit w/g++ 4.8.1
 
+  $ make
 
