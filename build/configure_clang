@@ -3,7 +3,7 @@ if [ -e CMakeCache.txt ] ; then
     rm CMakeCache.txt
 fi
 
-export CXX="/usr/local/clang/bin/clang++"
-export CC="/usr/local/clang/bin/clang"
+export CXX="/usr/local/clang34/bin/clang++"
+export CC="/usr/local/clang34/bin/clang"
 
-cmake .. -DCMAKE_BUILD_TYPE=Debug $1
+cmake .. -DCMAKE_BUILD_TYPE=Debug -DBUILD_CLANG_LIBCPP=ON $1

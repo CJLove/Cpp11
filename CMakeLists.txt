@@ -11,6 +11,10 @@ if(BUILD_64BIT)
     add_definitions(-m64)
 endif()
 
+if(BUILD_CLANG_LIBCPP)
+    add_definitions(-stdlib=libc++)
+endif()
+
 add_subdirectory(Auto)
 add_subdirectory(SmartPtrs)
 add_subdirectory(Strings)
