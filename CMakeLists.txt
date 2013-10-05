@@ -12,7 +12,8 @@ if(BUILD_64BIT)
 endif()
 
 if(BUILD_CLANG_LIBCPP)
-    add_definitions(-stdlib=libc++)
+    add_definitions(-stdlib=libc++ )
+    set( CMAKE_EXE_LINKER_FLAGS "-std=c++11 -stdlib=libc++" )
 endif()
 
 add_subdirectory(Auto)
