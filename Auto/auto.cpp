@@ -2,8 +2,8 @@
 #include <vector>
 #include <algorithm>
 
-double foo(int a, int c)
-{
+double foo(int a, int c, int ddddddddddddddddddddddd, int ffffffffffffff,
+           int ggggggggggggggggggggggggg) {
     return static_cast<double>(a/c);
 }
 
